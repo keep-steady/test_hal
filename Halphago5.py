@@ -128,15 +128,15 @@ while(True):
     # 702x702 : 10
     # 756x756 : 6
     # #사진 사용할 경우
-    # source = cv.imread('img/sample_1.png')
-    # source = source[:,420:1500]  # 1080x1080으로 자르기
-    # source = cv.resize(source, (set_height, set_width), interpolation=cv.INTER_AREA)  # 700*700이면 충분할듯
+    source = cv.imread('img/sample_1.png')
+    source = source[:,420:1500]  # 1080x1080으로 자르기
+    source = cv.resize(source, (set_height, set_width), interpolation=cv.INTER_AREA)  # 700*700이면 충분할듯
 
     
     #웹캠 사용할 경우
-    ret, source = cap.read()
-    if ret == False:
-        continue
+    # ret, source = cap.read()
+    # if ret == False:
+    #     continue
 
     
     source2 = source.copy()
